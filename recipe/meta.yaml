@@ -11,7 +11,7 @@ source:
 
 build:
   number: 1000
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vv"
 
 requirements:
   host:
@@ -33,6 +33,7 @@ requirements:
     - unittest2  # [py2k]
     - pyqtgraph >=0.10
     - scikit-image >=0.12.3
+    - pillow >5.2
 
 test:
   imports:
