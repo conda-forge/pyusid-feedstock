@@ -10,8 +10,8 @@ source:
   sha256: eabd9979158c65db38b86efafd41c624eaeef1c477ff8fc97e867ba72a57a004
 
 build:
-  number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  number: 1000
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vv"
 
 requirements:
   host:
@@ -33,6 +33,7 @@ requirements:
     - unittest2  # [py2k]
     - pyqtgraph >=0.10
     - scikit-image >=0.12.3
+    - pillow >5.2
 
 test:
   imports:
