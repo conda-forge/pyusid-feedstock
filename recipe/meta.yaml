@@ -31,8 +31,7 @@ requirements:
     - ipython >=6.0  # [py3k]  # Beginning with IPython 6.0, Python 3.3 and above is required.
     - pyqt >=5  # [py3k]
     - unittest2  # [py2k]
-    - pyqtgraph >=0.10
-    - scikit-image >=0.12.3
+    - pillow
 
 test:
   imports:
