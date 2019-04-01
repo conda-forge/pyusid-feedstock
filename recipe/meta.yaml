@@ -1,5 +1,5 @@
 {% set name = "pyUSID" %}
-{% set version = "0.0.5" %}
+{% set version = "0.0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6e708a8d4ba594e8580ad39ee55729921377871cfa7dd2b773ec5b8e5fb185fa
+  sha256: e85af69d8bcc320180bc7be4b154ee56dc10861a307312cdb518125fb16da803
 
 build:
   number: 0
@@ -31,8 +31,7 @@ requirements:
     - ipython >=6.0  # [py3k]  # Beginning with IPython 6.0, Python 3.3 and above is required.
     - pyqt >=5  # [py3k]
     - unittest2  # [py2k]
-    - pyqtgraph >=0.10
-    - scikit-image >=0.12.3
+    - pillow
 
 test:
   imports:
