@@ -1,5 +1,5 @@
 {% set name = "pyUSID" %}
-{% set version = "0.0.6" %}
+{% set version = "0.0.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b49801c44f10a54db9037f33f5fee49bffe26c9f04c3d22fcb85c0d1b2f18b14
+  sha256: c939ceb3c62589c67d3cba82354bfba1d94cfd0be6b0052eaf33ec6964be872a
 
 build:
   number: 0
