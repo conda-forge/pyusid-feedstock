@@ -1,5 +1,5 @@
 {% set name = "pyUSID" %}
-{% set version = "0.0.5.1" %}
+{% set version = "0.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e85af69d8bcc320180bc7be4b154ee56dc10861a307312cdb518125fb16da803
+  sha256: b49801c44f10a54db9037f33f5fee49bffe26c9f04c3d22fcb85c0d1b2f18b14
 
 build:
   number: 0
@@ -20,7 +20,8 @@ requirements:
     - pytest-runner
   run:
     - python
-    - numpy >=1.13.0
+    - numpy >=1.10
+    - dask >=0.10
     - h5py >=2.6.0
     - matplotlib >=2.0.0
     - psutil
