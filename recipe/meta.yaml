@@ -10,7 +10,7 @@ source:
   sha256: 5464cf51a0924c2e3f9660bba597e239621151a6f771eabc4652b3e8205d92e7
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -23,7 +23,7 @@ requirements:
     - numpy >=1.10
     - dask >=0.10
     - h5py >=2.6.0
-    - matplotlib >=2.0.0
+    - matplotlib-base >=2.0.0
     - psutil
     - six
     - joblib >=0.11.0
