@@ -1,5 +1,5 @@
 {% set name = "pyUSID" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5464cf51a0924c2e3f9660bba597e239621151a6f771eabc4652b3e8205d92e7
+  sha256: 46fde88caf97dcdbdc2044382f29b1b2c986bc8f2d74cba14b9007c3187b9403
 
 build:
-  number: 1
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -41,9 +41,8 @@ about:
   home: https://github.com/pycroscopy/pyUSID
   license: MIT
   license_family: MIT
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
-  summary: 'Framework for storing, visualizing, and processing Universal
-    Spectroscopic and Imaging Data (USID)'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
+  summary: Framework for storing, visualizing, and processing Universal Spectroscopic and Imaging Data (USID)
   doc_url: https://pycroscopy.github.io/pyUSID/
   dev_url: https://github.com/pycroscopy/pyUSID
 
