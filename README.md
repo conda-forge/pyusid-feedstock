@@ -5,7 +5,7 @@ Home: https://github.com/pycroscopy/pyUSID
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Framework for storing, visualizing, and processing Universal Spectroscopic and Imaging Data (USID)
 
