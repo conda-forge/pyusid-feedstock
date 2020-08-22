@@ -31,6 +31,7 @@ requirements:
     - ipywidgets >=5.2.2
     - ipython >=6.0
     - pillow
+    - sidpy >=0.0.1
 
 test:
   imports:
