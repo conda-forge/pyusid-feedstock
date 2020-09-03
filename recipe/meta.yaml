@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3
     - pip
     - pytest-runner
   run:
-    - python
+    - python >=3
     - numpy >=1.10
     - dask >=0.10
     - h5py >=2.6.0
@@ -29,7 +29,7 @@ requirements:
     - six
     - joblib >=0.11.0
     - ipywidgets >=5.2.2
-    - ipython >=6.0
+    - ipython
     - pillow
     - sidpy >=0.0.1
 
