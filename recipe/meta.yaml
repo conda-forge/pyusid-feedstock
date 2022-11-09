@@ -1,5 +1,5 @@
 {% set name = "pyUSID" %}
-{% set version = "0.0.10" %}
+{% set version = "0.0.10.post2" %}
 
 package:
   name: {{ name|lower }}
