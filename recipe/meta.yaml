@@ -1,5 +1,5 @@
 {% set name = "pyUSID" %}
-{% set version = "0.0.10" %}
+{% set version = "0.0.10.post2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 456cdf44c493e368a6ad423810d0d7452ad0efdb70dd12070c4b443ae0faf85b
+  sha256: 83ed7d4d3e3219de4e6a88f309cea42b41f654a3eed732d60821dd86790648a3
 
 build:
   noarch: python
