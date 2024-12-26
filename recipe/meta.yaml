@@ -19,6 +19,7 @@ requirements:
     - python {{ python_min }}
     - pip
     - pytest-runner
+    - setuptools
   run:
     - python >={{ python_min }}
     - numpy >=1.10
