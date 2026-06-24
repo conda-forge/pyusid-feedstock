@@ -51,6 +51,7 @@ about:
 
 extra:
   recipe-maintainers:
-    - ssomnath
-    - compphyschris
     - carlodri
+    - ssomnath
+    - ramav87
+    - gduscher
